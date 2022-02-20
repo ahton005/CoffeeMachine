@@ -5,15 +5,16 @@ import java.util.Scanner;
 public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
-    private static final CoffeeMachine coffeeMachine = new CoffeeMachine(100, 100, 100);
+
 
     public static void main(String[] args) {
+        CoffeeMachine coffeeMachine = new CoffeeMachine(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]));
 
         System.out.println(coffeeMachine);
 
         while (true) {
             String temp = scanner.nextLine();
-            int volume = 0;
+            int volume;
 
             if (temp.equalsIgnoreCase("turn off")) return;
 
