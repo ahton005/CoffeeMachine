@@ -27,8 +27,10 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>liga.test.Main</mainClass>
+
                         </manifest>
                     </archive>
+                    <finalName>${project.name}</finalName>
                 </configuration>
             </plugin>
         </plugins>
